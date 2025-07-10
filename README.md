@@ -1,6 +1,11 @@
 # Weighbridge
 # ERP Weighbridge View – Oracle SQL Integration
 
+ERP-Weighbridge-View/
+├── VIEW_WEIGHBRIDGE_ENGINE.sql     # Oracle SQL View for Weighbridge transactions
+└── README.md                       # Project Documentation
+
+
 ## 🚛 Overview
 
 This project provides a specialized **Oracle SQL View** named `VIEW_WEIGHBRIDGE_ENGINE`, designed to extract and analyze Weighbridge transaction data from an ERP system. The view supports comprehensive tracking of vehicle weights, item-level data, transport details, and associated gate or order references.
