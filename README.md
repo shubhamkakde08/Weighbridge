@@ -26,3 +26,32 @@ This project provides a specialized **Oracle SQL View** named `VIEW_WEIGHBRIDGE_
     WHEN specific account_code THEN NETWT * 40
     ELSE NETWT * 160
   END
+Gate Entry Integration – fetches GATE_INDATE and OUTDATE using gate_vrno.
+
+Order and Contract Linkage – connects weighbridge entry to ORDER_BODY for contract and quantity comparison.
+
+Item Master Join – enriches view with item_name, item_group, item_nature, etc.
+
+Used Flag – detects whether weighbridge slip is already used in itemtran_head.
+
+Dynamic Fiscal Year Identification – via acc_year_mast.
+
+Weighbridge Purpose Indicator – derived from view_weighbridge_tcode.
+
+📊 Use Cases
+Vehicle in/out weight tracking
+
+Quantity validation vs contract/order
+
+Freight and gate pass verification
+
+Power BI dashboards or Excel reports
+
+Base for automated validations or RPA workflows
+
+🛠️ Technology Stack
+Oracle SQL / PL/SQL
+
+ERP Views: view_weighbridge_tran, view_item_mast, gatetran_head, etc.
+
+Custom Logic Integration for transport and freight tracking
